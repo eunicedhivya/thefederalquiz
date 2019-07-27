@@ -19,32 +19,69 @@
             </header>
             <div class="row">
                 <div class="col col1">
-                    <h1>HEADLINE OF QUIZ GOES HERE</h1>
+                    <h1 class="quiz_headline"></h1>
                     <img src="https://via.placeholder.com/960x600" alt="">
                 </div>
                 <div class="col col2">
-                    <p>Promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;</p>
+                    <p class="quiz_description"></p>
                     <button class="startBtn">
                         <img src="startbtn.png" alt="">
                     </button>
 
                     <div class="sharebuttons">
-                        <p>SHARE IT ON</p>
-                        <a href="facebook">facebook</a>
-                        <a href="facebook">Twitter</a>
+                        <p>SHARE<br>IT ON</p>
+                        <a href="facebook"><img src="facebook.png" alt=""></a>
+                            <a href="facebook"><img src="twitter.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div> <!--quiz_cover-->
-        <div id="questionslide" class="clearfixsol hidden"></div> <!--questionslide-->
-        <div id="quiz_endcover" class="clearfixsol hidden"></div> <!--quiz_endcover-->
+        <div id="questionslide" class="clearfixsol hidden">
+            <header class="quiz_headline"> </header>
+            <div id="quiz_content">
+
+            </div>
+            <div class="progressinfo">
+                <div class='row clearfixsol footer'>
+                    <p id="quizstatus" class='pull-left width50'></p>
+                    <button onclick='gotoNextQuestion()' class='pull-right width50 next fade-in' disabled='disabled' id='choiceSubmit'>Next &raquo;</button>
+                </div>
+                <div class="progressbar">
+                    <div class="progressbarfull"></div>
+                </div>
+            </div>
+        </div> <!--questionslide-->
+        <div id="quiz_endcover" class="clearfixsol hidden">
+
+                <h2 class="quiz_headline"> </h2>
+                <div class='quizcounter'><p>Your <br> Score</p> <p id="scorecounter"><span>1</span>/4</p> </div>
+                <p class="quiz_description"></p>
+                <div class="row clearfixsol">
+                    <div class="pull-left width50">
+                        <button><img src="restart.png" alt=""></button>
+                    </div>
+                    <div class="pull-right width50">
+                        <div class="sharebuttons">
+                            <p>SHARE<br>IT ON</p>
+                            <a href="facebook"><img src="facebook.png" alt=""></a>
+                            <a href="facebook"><img src="twitter.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+        </div> <!--quiz_endcover-->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="data.js"></script>
     <script src="functions.js"></script>
     <script type='text/javascript'>
 
-        var pos = 0, quiz, quiz_status, question, description, leadVisual, choiceA, choiceB, choiceC, choiceD, reference, score = 0;
+        var pos = 0, quiz, quiz_title, quiz_desc, quiz_status, question, description, leadVisual, choiceA, choiceB, choiceC, choiceD, reference, score = 0;
+
+        quiz_title = "Headline of quiz goes here";
+        quiz_desc = "Promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;";
+        jQuery(".quiz_headline").text(quiz_title);
+        jQuery(".quiz_description").text(quiz_desc);
 
         createAQuestion();
 
