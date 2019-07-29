@@ -1,5 +1,7 @@
 
-var quizTitle = "HEADLINE OF QUIZ GOES HERE";
+ quiz_title = "The Headline of quiz goes here";
+        quiz_desc = "The Quiz lead text promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;";
+        quiz_image = "https://via.placeholder.com/960x600";
 var listOfQuestions =  [
     {
       "questions": "Prime minister Narendra Modi is hosted by Bear Grylls in the discovery network for which program ?",
