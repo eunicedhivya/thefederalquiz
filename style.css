@@ -49,9 +49,12 @@
     float: left;}
 #questionslide img{ float: left; margin-right: 10px; width:40%;}
 
-#questionslide .row{ margin:10px 0 20px 0; }
+#questionslide .row { margin:20px 0; }
 #questionslide .col1{ float: left; width: 30%;}
-#questionslide .col2{ float: right; width: 70%;}
+#questionslide .col2{ 
+    float: right; 
+    width: 70%;
+}
 #questionslide .choices input, label{ transition: all 0.5s;}
 #questionslide h3{ font-size: 12pt; }
 #questionslide .quizcounter { padding-top:10px;}
@@ -59,7 +62,8 @@
 #questionslide .quizcounter p:last-child{ font-size: 60px; margin: 0;line-height: 100px;}
 #questionslide .quizcounter p:last-child span{ font-size: 120px; }
 
-#quizstatus{ font-size: 24px;}
+#quizstatus{     font-size: 24px;
+    margin: 10px 0;}
 #quizstatus span{ font-weight: bold;}
 
 /* #quiz_content label{background-color: #FFFFFF; background-color: #FFFFFF;
@@ -123,8 +127,7 @@
 #quiz_endcover .quizcounter p:first-child { position: absolute; right: 25px; top: 50px; line-height: 18px; margin: 0;}
 #quiz_endcover #scorecounter { font-size: 60px; letter-spacing: -5px; margin: 20px; padding: 33px 0 0 0; position: absolute; margin-left: 50%; transform: translateX(-50%);top: -20px}
 #quiz_endcover #scorecounter span{ font-size: 105px; letter-spacing: -10px;}
-
-.referencemsg p{ font-weight: 700; }
+.referencemsg p{ font-weight: 700; margin: 0;}
 .referencemsg a{ color: #008dd1; text-decoration: none;}
 
 /* Mobile Devices */
@@ -176,7 +179,9 @@
     margin: 0 0 -15px 0;
     display: block;
     box-sizing: border-box;
-    line-height: 27px; font-weight: 700;
+    line-height: 27px; 
+    font-weight: 700;
+    z-index: 9999;
 }
 #quiz_content input[type=radio] {
     opacity: 1;
@@ -214,4 +219,13 @@
   #quiz_content input[type=radio].green:checked:before {
     background-color: #23a216;
     border-color:#23a216;
+  }
+  .referencemsg {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 15px 0 0 0;
+    display: block;
+    box-sizing: border-box;
+    line-height: 27px; 
+    font-weight: 700;
   }
