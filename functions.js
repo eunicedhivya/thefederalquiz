@@ -79,12 +79,14 @@ function checkAnswer(){
 function endQuiz() {
 
     quiz = getElement("quiz_endcover");
-    endscore = getElement("scorecounter");
+    endscore = getElement("score");
+    noofquestions = getElement("noofquestions");
     // jQuery("#quiz_cover").addClass("hidden")
     // jQuery("#questionslide").removeClass("hidden")
     jQuery("#questionslide").addClass("hidden")
     jQuery("#quiz_endcover").removeClass("hidden")
-    endscore.innerHTML = "<span>"+score+"</span>/"+listOfQuestions.length;
+    endscore.innerHTML = score;
+    noofquestions.innerHTML = "/"+listOfQuestions.length;
     // quiz.innerHTML += "<p>Score"+score+"</p>";
 }
 

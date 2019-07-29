@@ -20,21 +20,24 @@
             <div class="row">
                 <div class="col col1">
                     <h1 class="quiz_headline"></h1>
-                    <img src="https://via.placeholder.com/960x600" alt="">
+                    <img class="quiz_leadimg" src="" alt="">
                 </div>
-                <div class="col col2">
+                <div class="col col2 makerelative">
                     <div class="verticalalignment">
                         <p class="quiz_description"></p>
+                        
+                    </div> 
+                    <div class="pulltobottom">
                         <button class="startBtn">
                             <img src="startbtn.png" alt="">
-                        </button>
-
+                        </button>   
                         <div class="sharebuttons">
                             <p>SHARE<br>IT ON</p>
                             <a href="facebook"><img src="facebook.png" alt=""></a>
                                 <a href="facebook"><img src="twitter.png" alt=""></a>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div> <!--quiz_cover-->
@@ -56,7 +59,8 @@
         <div id="quiz_endcover" class="clearfixsol hidden">
 
                 <h2 class="quiz_headline"> </h2>
-                <div class='quizcounter'><p>Your <br> Score</p> <p id="scorecounter"></p> </div>
+                <div class='quizcounter2'><p id="score"></p> <p id="scoredesc">your<br>score</p><p id="noofquestions"></p></div>
+                <!-- <div class='quizcounter'><p>Your <br> Score</p> <p id="scorecounter"></p> </div> -->
                 <p class="quiz_description"></p>
                 <div class="row clearfixsol">
                     <div class="pull-left width50">
@@ -80,10 +84,12 @@
 
         var pos = 0, quiz, quiz_title, quiz_desc, quiz_status, question, description, leadVisual, choiceA, choiceB, choiceC, choiceD, reference, score = 0;
 
-        quiz_title = "The Quiz title goes here";
+        quiz_title = "The Headline of quiz goes here";
         quiz_desc = "The Quiz lead text promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;";
+        quiz_image = "https://via.placeholder.com/960x600";
         jQuery(".quiz_headline").text(quiz_title);
         jQuery(".quiz_description").text(quiz_desc);
+        jQuery(".quiz_leadimg").attr("src", quiz_image);
 
         
 
