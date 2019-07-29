@@ -44,7 +44,7 @@ function checkAnswer(){
         jQuery('#quiz_content input[type=radio]:checked').addClass('green')
         score++;
 
-        jQuery("<p>Correct answer! To know more <a href='"+reference+"' target='_blank'>click here</a></p>" ).fadeIn("slow")
+        jQuery("<p>Right answer! <a href='"+reference+"' target='_blank'>Click here</a> to read why.</p>" ).fadeIn("slow")
         .appendTo( "div.referencemsg" );
 
     }else{
@@ -66,7 +66,7 @@ function checkAnswer(){
 
         });
 
-        jQuery("<p>Incorrect answer! To know more <a href='"+reference+"' target='_blank'>click here</a></p>" ).fadeIn("slow")
+        jQuery("<p>Oops!, wrong answer. <a href='"+reference+"' target='_blank'>Click here</a> to read why.</p>" ).fadeIn("slow")
         .appendTo( "div.referencemsg" );
     }
 
@@ -79,11 +79,12 @@ function checkAnswer(){
 function endQuiz() {
 
     quiz = getElement("quiz_endcover");
+    endscore = getElement("scorecounter");
     // jQuery("#quiz_cover").addClass("hidden")
     // jQuery("#questionslide").removeClass("hidden")
     jQuery("#questionslide").addClass("hidden")
     jQuery("#quiz_endcover").removeClass("hidden")
-    // quiz.innerHTML = "<h3>End of Quiz</h3>";
+    endscore.innerHTML = "<span>"+score+"</span>/"+listOfQuestions.length;
     // quiz.innerHTML += "<p>Score"+score+"</p>";
 }
 
@@ -110,7 +111,8 @@ function createAQuestion() {
     // quiz.innerHTML = "<h3>" +  + "</h3>";
     // quiz.innerHTML += "<header> HEADLINE OF QUIZ GOES HERE </header>"
     quiz.innerHTML += "<div class='row clearfixsol'><img class='fade-in' src='" + leadVisual + "' /><h3>"+question+"</h3></div>"
-    quiz.innerHTML += "<div class='row clearfixsol'><div class='col col1 quizcounter'> <p>Points</p> <p><span>"+score+"</span>/"+listOfQuestions.length+"</p> </div> <div class='col col2'> <div class= 'ip-container'><input onclick='checkAnswer()' type='radio' name='choices' value='A' id='choA'> <label for='choA'>" + choiceA + " </label></div><br> <div class= 'ip-container'><input onclick='checkAnswer()' type='radio' name='choices' value='B' id='choB'><label for='choB'> " + choiceB + "</label></div><br><div class= 'ip-container'><input onclick='checkAnswer()' type='radio' name='choices' value='C' id='choC'><label for='choC'> " + choiceC + "</label> </div> <br> <div class='ip-container'>  <input onclick='checkAnswer()' type='radio' name='choices' value='D'> <label for='choC'>" + choiceD + "</label><br> </div><div class='referencemsg'></div></div></div>";
+    quiz.innerHTML += "<div class='row clearfixsol'><div class='col col1 quizcounter'> <p>Score</p> <p><span>"+score+"</span>/"+listOfQuestions.length+"</p> </div> <div class='col col2'> <div class= 'ip-container'><input onclick='checkAnswer()' type='radio' name='choices' value='A' id='choA'> <label for='choA'>" + choiceA + " </label></div><br> <div class= 'ip-container'><input onclick='checkAnswer()' type='radio' name='choices' value='B' id='choB'><label for='choB'> " + choiceB + "</label></div><br><div class= 'ip-container'><input onclick='checkAnswer()' type='radio' name='choices' value='C' id='choC'><label for='choC'> " + choiceC + "</label> </div> <br> <div class='ip-container'>  <input onclick='checkAnswer()' type='radio' name='choices' value='D'> <label for='choC'>" + choiceD + "</label><br> </div><div class='referencemsg'></div></div></div>";
+
     // quiz.innerHTML += "<div class='row clearfixsol'><div class='col col1'> <p>Points</p> <p><span>"+score+"</span>/"+listOfQuestions.length+"</p> </div> <div class='col col2'> <input onclick='checkAnswer()' type='radio' name='choices' value='A'> <label for='choA'>" + choiceA + "</label><br> <input onclick='checkAnswer()' type='radio' name='choices' value='B'> <label for='choB'>" + choiceB + "</label><br> <input onclick='checkAnswer()' type='radio' name='choices' value='C'> <label for='choC'>" + choiceC + "</label><br> <input onclick='checkAnswer()' type='radio' name='choices' value='D'> <label for='choC'>" + choiceD + "</label><br> <div class='referencemsg'></div></div></div>";
 
     // quiz.innerHTML += "<div class='row clearfixsol footer'><p class='pull-left width50'>Q"+(pos+1)+" of "+listOfQuestions.length+"</p><button onclick='gotoNextQuestion()' class='pull-right width50 next fade-in' disabled='disabled' id='choiceSubmit'>Next &raquo;</button> </div>";
