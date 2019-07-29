@@ -136,11 +136,16 @@
     #quiz_cover .col1, #quiz_cover .col2, #questionslide .col1,  #questionslide .col2 { float: none; width: 100%; }
     #quiz_cover .col1 h1 { font-size: 30px; line-height: 33px; }
     .quiz_description { font-size: 14px; margin: 0 0 10px 0;}
-    #questionslide img { width: 100%; }
+    #questionslide img {
+        width: 90%;
+        /* text-align: center;
+        margin-left: 50%;
+        transform: translateX(-50%); */
+    }
     /* #quizapp { height: 100vh;} */
     /* #questionslide { height: 100vh;} */
-    #questionslide .quizcounter p:last-child { font-size: 40px;    line-height: 80px; }
-    #questionslide .quizcounter p:last-child span { font-size: 80px; }
+    #questionslide .quizcounter p:last-child { font-size: 40px; line-height: 70px; }
+    #questionslide .quizcounter p:last-child span { font-size: 70px; }
     #quiz_content {  padding: 30px 30px 0 30px; }
     .progressinfo {position: relative;}
     #questionslide .row:first-child { margin: 15px 0 15px 0; }
@@ -154,6 +159,7 @@
 
     #quiz_endcover .width50:first-child {width: 48%}
     #quiz_endcover .width50:nth-child(2){width: 52%}
+    .referencemsg p { font-size: 14px; }
 
     
 }
