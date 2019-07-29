@@ -43,7 +43,7 @@ function checkAnswer(){
 
         score++;
 
-        jQuery("<p>Correct answer! To know more <a href='"+reference+"' target='_blank'>click here</a></p>" ).fadeIn("slow")
+        jQuery("<p>Right answer! <a href='"+reference+"' target='_blank'>Click here</a> to read why.</p>" ).fadeIn("slow")
         .appendTo( "div.referencemsg" );
 
     }else{
@@ -63,7 +63,7 @@ function checkAnswer(){
 
         });
 
-        jQuery("<p>Incorrect answer! To know more <a href='"+reference+"' target='_blank'>click here</a></p>" ).fadeIn("slow")
+        jQuery("<p>Oops!, wrong answer. <a href='"+reference+"' target='_blank'>Click here</a> to read why.</p>" ).fadeIn("slow")
         .appendTo( "div.referencemsg" );
     }
 
