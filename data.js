@@ -1,48 +1,56 @@
 
-var quizTitle = "HEADLINE OF QUIZ GOES HERE";
+ quiz_title = "The Headline of quiz goes here";
+        quiz_desc = "The Quiz lead text promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;";
+        quiz_image = "https://via.placeholder.com/960x600";
 var listOfQuestions =  [
-  {
-    "questions": "What does CSS stand for?",
-    "description": "Promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;",
-    "choiceone": "Creative Style Sheets",
-    "choicetwo": "Computer Style Sheets",
-    "choicethree": "Colorful style sheet",
-    "choicefour": "Cascading style sheet",
-    "answer": "D",
-    "leadvisual": "https://via.placeholder.com/960x600",
-    "reference": "https://www.w3schools.com/css/css_intro.asp"
-  },
-  {
-    "questions": "What is the correct HTML for referring to an external style sheet?",
-    "description": "Promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;",
-    "choiceone": "link tag",
-    "choicetwo": "style tag",
-    "choicethree": "stylesheet tag",
-    "choicefour": "stylesheet tag 2",
-    "answer": "A",
-    "leadvisual": "https://via.placeholder.com/960x600",
-    "reference": "https://www.w3schools.com/css/css_syntax.asp"
-  },
-  {
-    "questions": "Where in an HTML document is the correct place to refer to an external style sheet?",
-    "description": "Promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;",
-    "choiceone": "head tag",
-    "choicetwo": "body tag",
-    "choicethree": "html tag",
-    "choicefour": "test tag",
-    "answer": "A",
-    "leadvisual": "https://via.placeholder.com/960x600",
-    "reference": "https://www.w3schools.com/css/css_intro.asp"
-  },
-  {
-    "questions": "Which HTML tag is used to define an internal style sheet?",
-    "description": "Promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;",
-    "choiceone": "css tag",
-    "choicetwo": "link tag",
-    "choicethree": "style tag",
-    "choicefour": "html tag",
-    "answer": "C",
-    "leadvisual": "https://via.placeholder.com/960x600",
-    "reference": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS"
-  }
-]
+    {
+      "questions": "Prime minister Narendra Modi is hosted by Bear Grylls in the discovery network for which program ?",
+      "choiceone": "Dual Survivor",
+      "choicetwo": "Man Vs Wild",
+      "choicethree": "Tigerland",
+      "choicefour": "Return to the Moon",
+      "answer": "B",
+      "leadvisual": null,
+      "reference": "#"
+    },
+    {
+      "questions": "Which among these is the Rover to be set free on the Moon abode Chandrayaan-2?",
+      "choiceone": "Vikram",
+      "choicetwo": "Bahubali",
+      "choicethree": "Pragyaan",
+      "choicefour": "Retroreflector",
+      "answer": "C",
+      "leadvisual": null,
+      "reference": "#"
+    },
+    {
+      "questions": "Which Indian football team celebrates as its day today 29th July?",
+      "choiceone": "Dempo Sports club",
+      "choicetwo": "East Bengal FC",
+      "choicethree": "Salgoankar FC",
+      "choicefour": "Mohan Bagan FC",
+      "answer": "D",
+      "leadvisual": null,
+      "reference": "#"
+    },
+    {
+      "questions": "Who was recently nominated to receive Sangita kalanidhi academy award by Music academy this year?",
+      "choiceone": "T M Krishna",
+      "choicetwo": "Sowmya",
+      "choicethree": "Bombay Jayshree",
+      "choicefour": "Unnikrishnan",
+      "answer": "B",
+      "leadvisual": null,
+      "reference": "#"
+    },
+    {
+      "questions": "Which country was the last to shift its dateline in 1995,hence its the first to enter the New Year?",
+      "choiceone": "Kiribati",
+      "choicetwo": "Solomon Island",
+      "choicethree": "Easter island",
+      "choicefour": "Tahiti",
+      "answer": "A",
+      "leadvisual": null,
+      "reference": "#"
+    }
+  ]
