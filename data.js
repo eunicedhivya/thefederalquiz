@@ -1,7 +1,7 @@
 
  quiz_title = "The Headline of quiz goes here";
         quiz_desc = "The Quiz lead text promoting mixed land use in area based developments–planning for ‘unplanned areas’ containing a range of compatible activities and land uses close to one another in order to make land use more efficient. The States will enable some flexibility in land use and building bye-laws to adapt to change;";
-        quiz_image = "https://via.placeholder.com/960x600";
+        quiz_image = "https://i.ibb.co/Np3VGvg/beargrills.jpg";
 var listOfQuestions =  [
     {
       "questions": "Prime minister Narendra Modi is hosted by Bear Grylls in the discovery network for which program ?",
@@ -10,7 +10,7 @@ var listOfQuestions =  [
       "choicethree": "Tigerland",
       "choicefour": "Return to the Moon",
       "answer": "B",
-      "leadvisual": null,
+      "leadvisual": "https://i.ibb.co/Np3VGvg/beargrills.jpg",
       "reference": "#"
     },
     {
@@ -20,7 +20,7 @@ var listOfQuestions =  [
       "choicethree": "Pragyaan",
       "choicefour": "Retroreflector",
       "answer": "C",
-      "leadvisual": null,
+      "leadvisual": "https://i.ibb.co/tKhscdB/chandrayaan.jpg",
       "reference": "#"
     },
     {
@@ -30,7 +30,7 @@ var listOfQuestions =  [
       "choicethree": "Salgoankar FC",
       "choicefour": "Mohan Bagan FC",
       "answer": "D",
-      "leadvisual": null,
+      "leadvisual": "https://i.ibb.co/JnZWjrF/football.jpg",
       "reference": "#"
     },
     {
@@ -40,7 +40,7 @@ var listOfQuestions =  [
       "choicethree": "Bombay Jayshree",
       "choicefour": "Unnikrishnan",
       "answer": "B",
-      "leadvisual": null,
+      "leadvisual": "https://i.ibb.co/D1P1GM6/academy.jpg",
       "reference": "#"
     },
     {
@@ -50,7 +50,7 @@ var listOfQuestions =  [
       "choicethree": "Easter island",
       "choicefour": "Tahiti",
       "answer": "A",
-      "leadvisual": null,
+      "leadvisual": "https://i.ibb.co/64BQRgz/kiribatti.jpg",
       "reference": "#"
     }
   ]
